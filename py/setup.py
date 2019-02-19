@@ -32,13 +32,13 @@
 
 
 import io
-from test_step_parser.version import __version__ as version
+from test_step_parser import __version__ as version
 from setuptools import setup, find_packages
 
 
 packages = []
 for package in find_packages():
-    if package.startswith('qaviton'):
+    if package.startswith('test_step_parser'):
         packages.append(package)
 
 
@@ -47,11 +47,15 @@ with io.open('README.rst', 'rt', encoding='utf8') as f:
 
 
 setup(
-    name='qaviton',
+    name='test_step_parser',
     version=version,
-    description='python implementation of qaviton',
+    description='The test step parser is a universal format for '
+                'describing automated test steps & automatically'
+                ' parse source code and generate a step metadata'
+                ' for AI & humans to create automated tests fast'
+                ' and easy.',
     long_description=readme,
-    keywords=['qaviton'],
+    keywords=['test_step_parser'],
     author='Yehonadav Bar Elan',
     author_email='yehonadav@Qaviton.com',
     url='https://qaviton.com/',
@@ -69,7 +73,6 @@ setup(
         'Operating System :: OS Independent',
         'Topic :: Software Development :: Quality Assurance',
         'Topic :: Software Development :: Testing',
-        'Topic :: Software Development :: Automation',
     ],
     install_requires=[]
 )

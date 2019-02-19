@@ -37,7 +37,7 @@ Simple Examples
 
 
 Community
-------------
+---------
 
 Please checkout our public test repository at: https://github.com/qaviton/test_repository
 

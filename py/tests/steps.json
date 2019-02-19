@@ -1,0 +1,46 @@
+[
+  {
+    "project": "tests",
+    "steps": [
+      {
+        "name": "login to app",
+        "call": "login",
+        "args": [
+          {"name": "username"},
+          {"name": "password", "default": "\"123456\""}
+        ],
+        "return": ["name"],
+        "import": "from tests.test_steps import login",
+        "description": "login from landing page with valid username & password with validation"
+      },
+      {
+        "name": "logout from app",
+        "call": "logout",
+        "args": [],
+        "return": [],
+        "import": "from tests.test_steps import logout",
+        "description": "logout back to news feed page with validation"
+      },
+      {
+        "name": "go to cart",
+        "call": "go_to_cart",
+        "args": [],
+        "return": [],
+        "import": "from tests.test_steps import go_to_cart",
+        "description": "navigate to cart section after logging in with validation"
+      },
+      {
+        "name": "checkout a cart",
+        "call": "checkout",
+        "args": [],
+        "return": [],
+        "import": "from tests.test_steps import checkout",
+        "description": "check out a cart with validation"
+      }
+    ]
+  },
+  {
+    "project": "qaviton",
+    "steps": []
+  }
+]
