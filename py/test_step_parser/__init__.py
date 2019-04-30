@@ -21,11 +21,11 @@ import site
 import json
 from fnmatch import fnmatch
 site_packages = site.getsitepackages()[-1]
-steps_file = 'stepsX.json'
+steps_file = 'steps.json'
 pattern = "*steps.json"
 
 
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 
 
 # TODO: dynamic steps.json creation using Antlr for every function with :step: in its docstring
