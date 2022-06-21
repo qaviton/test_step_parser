@@ -13,7 +13,7 @@ imageio==2.5.0
 keyboard==0.13.2
 more-itertools==6.0.0
 mouse==0.7.0
-numpy==1.16.1
+numpy==1.22.0
 Pillow==5.4.1
 pluggy==0.8.1
 py==1.7.0
